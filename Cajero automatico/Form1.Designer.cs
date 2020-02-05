@@ -38,7 +38,7 @@
             // 
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(12, 36);
+            this.lblCantidad.Location = new System.Drawing.Point(12, 9);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(149, 24);
             this.lblCantidad.TabIndex = 0;
@@ -47,16 +47,16 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(108, 90);
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(301, 13);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(84, 25);
+            this.lblTotal.Size = new System.Drawing.Size(61, 20);
             this.lblTotal.TabIndex = 1;
             this.lblTotal.Text = "Total: ?";
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(167, 40);
+            this.txtCantidad.Location = new System.Drawing.Point(167, 13);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtCantidad.TabIndex = 2;
@@ -64,7 +64,7 @@
             // btnRetirar
             // 
             this.btnRetirar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRetirar.Location = new System.Drawing.Point(123, 135);
+            this.btnRetirar.Location = new System.Drawing.Point(104, 172);
             this.btnRetirar.Name = "btnRetirar";
             this.btnRetirar.Size = new System.Drawing.Size(98, 35);
             this.btnRetirar.TabIndex = 3;
@@ -76,7 +76,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(316, 200);
+            this.ClientSize = new System.Drawing.Size(523, 233);
             this.Controls.Add(this.btnRetirar);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.lblTotal);
