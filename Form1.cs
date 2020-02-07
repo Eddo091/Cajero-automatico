@@ -16,7 +16,7 @@ namespace Cajero_automatico
         {
             InitializeComponent();
         }
-
+        //Retirar del banco
         private void btnRetirar_Click(object sender, EventArgs e)
         {
             double[] denominaciones = { 100, 50, 20, 10, 5, 1, 0.5, 0.25, 0.1, 0.05, 0.01 };
@@ -46,7 +46,7 @@ namespace Cajero_automatico
             lblTotal.Text = respuesta;
         }
 
-
+        //Fibonacci
         private void btnFibo_Click(object sender, EventArgs e)
         {
             int n = int.Parse(txtfibo.Text), a = 0, b = 1, au, i;
@@ -66,7 +66,7 @@ namespace Cajero_automatico
 
 
         }
-
+        //Dejar invisible las respuestas
         private void Form1_Load(object sender, EventArgs e)
         {
             lblTotal.Visible = false;
@@ -77,18 +77,9 @@ namespace Cajero_automatico
 
         private void btnPrimo_Click(object sender, EventArgs e)
         {
-            int a = 0, i, n;
-
-            n = int.Parse(txtPrimo.Text);
-
-            a = 0;
-            for (i = 1; i < (n + 1); i++)
-                if (n % i == 0)
-                    a++;
-            lblPrimoResp.Visible = true;
-            lblPrimoResp.Text = ((a != 2) ? n + " no es primo " : " El numero " + n + " es primo ");
+           
         }
-
+        //Pagar producto
         private void btnRetirar2_Click(object sender, EventArgs e)
         {
             double a = double.Parse(txtPrecio.Text), b = double.Parse(txtcCant.Text), total;
@@ -99,7 +90,7 @@ namespace Cajero_automatico
             {
                 while (denominacion <= Math.Round(a, 2))
                 {
-                    n++;
+                    a++;
                     a -= denominacion;
                     total = (a % b);
 
@@ -108,7 +99,7 @@ namespace Cajero_automatico
                 if (n > 0)
                 {
                     lblTotal2.Visible = true;
-                    respuesta += n + (denominacion > 1 ? " Billetes de " : " Monedas de ") + denominacion + "\n";
+                    respuesta += a + (denominacion > 1 ? " Billetes de " : " Monedas de ") + denominacion + "\n";
 
                     n = 0;
 
@@ -119,6 +110,26 @@ namespace Cajero_automatico
 
                 }
             }
+        }
+
+        //Primo
+        private void btnPrimo_Click_1(object sender, EventArgs e)
+        {
+           
+            int a = 0, i, n;
+
+            n = int.Parse(txtPrimo.Text);
+           
+            a = 0;
+           
+            for (i = 1; i < (n + 1); i++)
+              
+            if (n % i == 0)
+                    a++;
+          
+            lblPrimoResp.Visible = true;
+
+            lblPrimoResp.Text = ((a != 2) ?  n + " No es primo " :  n + "  Es primo" + "\n");
         }
     }
 }
