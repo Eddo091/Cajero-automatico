@@ -62,7 +62,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(301, 13);
+            this.lblTotal.Location = new System.Drawing.Point(579, 13);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(61, 20);
             this.lblTotal.TabIndex = 1;
@@ -78,7 +78,7 @@
             // btnRetirar
             // 
             this.btnRetirar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRetirar.Location = new System.Drawing.Point(428, 9);
+            this.btnRetirar.Location = new System.Drawing.Point(319, 4);
             this.btnRetirar.Name = "btnRetirar";
             this.btnRetirar.Size = new System.Drawing.Size(98, 35);
             this.btnRetirar.TabIndex = 3;
@@ -103,13 +103,13 @@
             this.btnRetirar2.Name = "btnRetirar2";
             this.btnRetirar2.Size = new System.Drawing.Size(98, 35);
             this.btnRetirar2.TabIndex = 5;
-            this.btnRetirar2.Text = "Retirar";
+            this.btnRetirar2.Text = "Pagar";
             this.btnRetirar2.UseVisualStyleBackColor = true;
             this.btnRetirar2.Click += new System.EventHandler(this.btnRetirar2_Click);
             // 
             // txtcCant
             // 
-            this.txtcCant.Location = new System.Drawing.Point(473, 68);
+            this.txtcCant.Location = new System.Drawing.Point(452, 66);
             this.txtcCant.Name = "txtcCant";
             this.txtcCant.Size = new System.Drawing.Size(100, 20);
             this.txtcCant.TabIndex = 6;
@@ -127,7 +127,7 @@
             // btnFibo
             // 
             this.btnFibo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFibo.Location = new System.Drawing.Point(428, 102);
+            this.btnFibo.Location = new System.Drawing.Point(311, 106);
             this.btnFibo.Name = "btnFibo";
             this.btnFibo.Size = new System.Drawing.Size(106, 35);
             this.btnFibo.TabIndex = 8;
@@ -146,7 +146,7 @@
             // 
             this.lblFiboResp.AutoSize = true;
             this.lblFiboResp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFiboResp.Location = new System.Drawing.Point(295, 111);
+            this.lblFiboResp.Location = new System.Drawing.Point(453, 115);
             this.lblFiboResp.Name = "lblFiboResp";
             this.lblFiboResp.Size = new System.Drawing.Size(99, 20);
             this.lblFiboResp.TabIndex = 10;
@@ -183,7 +183,7 @@
             // 
             this.lblPrimoResp.AutoSize = true;
             this.lblPrimoResp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrimoResp.Location = new System.Drawing.Point(290, 166);
+            this.lblPrimoResp.Location = new System.Drawing.Point(448, 167);
             this.lblPrimoResp.Name = "lblPrimoResp";
             this.lblPrimoResp.Size = new System.Drawing.Size(104, 20);
             this.lblPrimoResp.TabIndex = 14;
@@ -192,7 +192,7 @@
             // btnPrimo
             // 
             this.btnPrimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrimo.Location = new System.Drawing.Point(428, 157);
+            this.btnPrimo.Location = new System.Drawing.Point(302, 163);
             this.btnPrimo.Name = "btnPrimo";
             this.btnPrimo.Size = new System.Drawing.Size(106, 35);
             this.btnPrimo.TabIndex = 15;

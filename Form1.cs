@@ -36,7 +36,12 @@ namespace Cajero_automatico
                 if (n > 0)
                 {
                     lblTotal.Visible = true;
-                    respuesta += n + (denominacion > 1 ? " Billetes de " : " Monedas de ") + denominacion + "\n";
+                    //oculto respuestas
+                    lblPrimoResp.Visible = false;
+                    lblTotal2.Visible = false;
+                    lblFiboResp.Visible = false;
+                    
+                    respuesta +=  n + (denominacion > 1 ? " Billetes de " : " Monedas de ") + denominacion + "\n";
 
                 }
                 n = 0;
@@ -44,6 +49,7 @@ namespace Cajero_automatico
             }
 
             lblTotal.Text = respuesta;
+            txtCantidad.Text = "";
         }
 
         //Fibonacci
@@ -56,11 +62,18 @@ namespace Cajero_automatico
                 au = a;
                 a = b;
                 b = au + a;
-                respuesta += "\n" + "la suma de " + a + " es " + b;
+                respuesta +=  "la suma de " + a + " es " + b +"\n" ;
 
                 lblFiboResp.Visible = true;
+                //Oculto respuestas
+                lblPrimoResp.Visible = false;
+                lblTotal2.Visible = false;
+                lblTotal2.Visible = false;
+                lblTotal.Visible = false;
 
                 lblFiboResp.Text = "" + respuesta;
+
+                txtfibo.Text = "";
             }
 
 
@@ -83,39 +96,47 @@ namespace Cajero_automatico
         private void btnRetirar2_Click(object sender, EventArgs e)
         {
             double a = double.Parse(txtPrecio.Text), b = double.Parse(txtcCant.Text), total;
-            double[] denominaciones = { 100, 50, 20, 10, 5, 1, 0.5, 0.25, 0.1, 0.05, 0.01 };
+            double[] denominaciones = { 100, 50, 20, 10, 5, 1, 0.5, 0.25, 0.1, 0.05, 0.01};
             sbyte n = 0;
-            string respuesta = "Total: \n";
+            string respuesta = "Total: \n" ;
             foreach (double denominacion in denominaciones)
             {
+                total = a - b;
                 while (denominacion <= Math.Round(a, 2))
                 {
                     a++;
+                    //
                     a -= denominacion;
-                    total = (a % b);
+                    
 
 
                 }
                 if (n > 0)
                 {
+                    
+                    //Oculto las respuestas que no necesito
+                    lblPrimoResp.Visible = false;
+                    lblFiboResp.Visible = false;
+                    lblTotal.Visible = false;
+
+                    //
                     lblTotal2.Visible = true;
-                    respuesta += a + (denominacion > 1 ? " Billetes de " : " Monedas de ") + denominacion + "\n";
+                    respuesta +=  total + "\n" + a + (denominacion > 1 ? " Billetes de " : " Monedas de ") + denominacion;
 
                     n = 0;
 
-
                     lblTotal2.Text = respuesta;
-
+                    //limpio
+                    txtcCant.Text = "";
+                    txtPrecio.Text = "";
 
 
                 }
             }
         }
-
-        //Primo
+     //Primo
         private void btnPrimo_Click_1(object sender, EventArgs e)
         {
-           
             int a = 0, i, n;
 
             n = int.Parse(txtPrimo.Text);
@@ -128,15 +149,15 @@ namespace Cajero_automatico
                     a++;
           
             lblPrimoResp.Visible = true;
+            //Oculto las respuestas que no necesito
+            lblTotal.Visible = false;
+            lblTotal2.Visible = false;
+            lblFiboResp.Visible = false;
 
             lblPrimoResp.Text = ((a != 2) ?  n + " No es primo " :  n + "  Es primo" + "\n");
+            //limpio
+            txtPrimo.Text = "";
+
         }
     }
 }
-
-
-    
-        
-    
-
-
