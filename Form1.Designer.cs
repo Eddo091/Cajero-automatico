@@ -120,9 +120,9 @@
             this.lblTotal2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal2.Location = new System.Drawing.Point(579, 68);
             this.lblTotal2.Name = "lblTotal2";
-            this.lblTotal2.Size = new System.Drawing.Size(61, 20);
+            this.lblTotal2.Size = new System.Drawing.Size(52, 20);
             this.lblTotal2.TabIndex = 7;
-            this.lblTotal2.Text = "Total: ?";
+            this.lblTotal2.Text = "Total: ";
             // 
             // btnFibo
             // 
